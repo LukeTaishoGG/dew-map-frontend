@@ -1,9 +1,13 @@
-import styles from "@/components/header/index.module.css";
+import styles from "@/components/Header/index.module.css";
+import HeaderLogo from "@/components/ui/HeaderLogo";
+import HumBarger from "@/components/ui/HumBarger";
+import { Box } from "@mui/material";
 
 export default function Header() {
   return (
-    <div className={styles.header}>
-      <h1>DewMap</h1>
-    </div>
+    <Box className={styles.header}>
+      <HumBarger />
+      <HeaderLogo />
+    </Box>
   );
 }
